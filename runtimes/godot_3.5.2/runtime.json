@@ -1,9 +1,10 @@
 {
     "version": 1,
-    "provies": "godot_3.5.2",
+    "name": "godot_3.5.2",
     "files": [
         "godot_3.5.2.txt"
     ],
+    "build": null,
     "builds": [
         {
             "title": "Godot/FRT 3.5.2",
