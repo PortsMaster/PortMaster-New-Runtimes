@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# TODO: detect x11/wayland in device_info.txt
+GODOT_BINARY="x11_${DEVICE_ARCH}_${GODOT_VERSION}"
+
+GODOT_OPTS="--resolution ${DISPLAY_WIDTH}x${DISPLAY_HEIGHT} -f"

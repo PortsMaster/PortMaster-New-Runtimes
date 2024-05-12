@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# TODO: detect x11/wayland in device_info.txt
+if [[ "$CFW_NAME" == "ROCKNIX" ]]; then
+    GODOT_BINARY="x11_${DEVICE_ARCH}_${GODOT_VERSION}"
+else
+    GODOT_BINARY="frt_${DEVICE_ARCH}_${GODOT_VERSION}"
+fi
+
+GODOT_OPTS="--resolution ${DISPLAY_WIDTH}x${DISPLAY_HEIGHT} -f"

@@ -1,0 +1,49 @@
+{
+    "version": 1,
+    "provies": "godot_3.5.2",
+    "files": [
+        "godot_3.5.2.txt"
+    ],
+    "builds": [
+        {
+            "title": "Godot/FRT 3.5.2",
+            "tag": "frt_arch64",
+            "reqs": ["aarch64", "!x11"],
+            "files": [
+                "godot_3.5.2/",
+                "godot_3.5.2/aarch64.txt",
+                "godot_3.5.2/frt_aarch64_3.5.2"
+            ]
+        },
+        {
+            "title": "Godot/FRT 3.5.2",
+            "tag": "frt_armhf",
+            "reqs": ["armhf"],
+            "files": [
+                "godot_3.5.2/",
+                "godot_3.5.2/armhf.txt",
+                "godot_3.5.2/frt_armhf_3.5.2"
+            ]
+        },
+        {
+            "title": "Godot/X11 3.5.2",
+            "tag": "x11_arch64",
+            "reqs": ["aarch64", "x11"],
+            "files": [
+                "godot_3.5.2/",
+                "godot_3.5.2/aarch64.txt",
+                "godot_3.5.2/x11_aarch64_3.5.2"
+            ]
+        },
+        {
+            "title": "Godot/X11 3.5.2",
+            "tag": "x11_x86_64",
+            "reqs": ["x64_64"],
+            "files": [
+                "godot_3.5.2/",
+                "godot_3.5.2/x86_64.txt",
+                "godot_3.5.2/x11_x86_64_3.5.2"
+            ]
+        }
+    ]
+}
