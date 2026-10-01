@@ -1,0 +1,4 @@
+#!/bin/bash
+
+GODOT_BINARY="frt_aarch64_3.7-dev1"
+GODOT_OPTS="--resolution ${DISPLAY_WIDTH}x${DISPLAY_HEIGHT} -f"

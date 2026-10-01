@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "name": "godot_3.7-dev1",
+    "files": [
+        "godot_3.7-dev1.txt"
+    ],
+    "build": null,
+    "builds": [
+        {
+            "title": "Godot/FRT 3.7-dev1 (ARM64, experimental)",
+            "tag": "frt_arch64",
+            "reqs": ["aarch64", "!x11"],
+            "files": [
+                "godot_3.7-dev1/",
+                "godot_3.7-dev1/aarch64.txt",
+                "godot_3.7-dev1/frt_aarch64_3.7-dev1"
+            ]
+        }
+    ]
+}

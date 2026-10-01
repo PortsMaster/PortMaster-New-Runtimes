@@ -1,0 +1,13 @@
+diff --git a/modules/webm/libvpx/SCsub b/modules/webm/libvpx/SCsub
+index 4170d54..7a91ca9 100644
+--- a/modules/webm/libvpx/SCsub
++++ b/modules/webm/libvpx/SCsub
+@@ -230,4 +230,4 @@ elif env["platform"] != "windows":  # Disable for Windows, yasm SIMD optimizatio
+-    is_x11_or_server_arm = (env["platform"] == "x11" or env["platform"] == "server") and (
+-        platform.machine().startswith("arm")
+-        or platform.machine().startswith("aarch")
+-        or ("arch" in env and env["arch"].startswith("arm"))
++    target_arch = env.get("arch", "") or env.get("frt_arch", "")
++    is_x11_or_server_arm = (env["platform"] in ("x11", "server", "frt")) and (
++        platform.machine().startswith(("arm", "aarch"))
++        or target_arch.startswith(("arm", "aarch"))
